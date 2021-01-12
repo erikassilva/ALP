@@ -1,2 +1,3 @@
 # ALP
- Exercícios de algoritmo e lógica de programação do 1o sem FATEC- 2020
+ Exercícios de algoritmo e lógica de programação do curso de análise e desenvolvimento de sistemas da FATEC realizado no 2o semestre de 2020.
+
