@@ -10,11 +10,11 @@ int main(int argc, char** argv){
 
     //Exibição de 2 números inteiros
     cout << "Exibindo 2 numeros inteiros\n";
-    cout << "Digite o 1o numero inteiro\n";
+    cout << "Digite o 1o numero inteiro: ";
     cin >> n1;
-    cout << "Digite o 2o numero inteiro\n";
+    cout << "Digite o 2o numero inteiro: ";
     cin >> n2;
-    cout << "O 1o inteiro digitado eh " << n1 << " e o 2o inteiros digitado eh " << n2;
+    cout << "O 1o inteiro digitado eh " << n1 << " e o 2o inteiro digitado eh " << n2 << endl;
 
     return 0;
 }

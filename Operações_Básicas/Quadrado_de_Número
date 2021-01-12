@@ -1,0 +1,20 @@
+//Efetuar a leitura de um número inteiro e apresentar o resultado do quadrado desse número
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    int n=0, quad=0;
+
+    //Quadrado de um número
+    cout << "Calculo do quadrado de um numero inteiro\n";
+    cout << "Digite um numero inteiro: ";
+    cin >> n;
+    quad = pow(n,2);
+    cout << "O quadrado de " << n << " eh " << quad;
+
+return 0;
+}

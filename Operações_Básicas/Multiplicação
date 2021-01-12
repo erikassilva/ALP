@@ -1,0 +1,21 @@
+//Faça um algoritmo que receba 2 números e apresente a multiplicação dos dois números
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    float n1=0, n2=0, multiplicacao=0;
+
+    //Multiplicação de dois números
+    cout << "Multiplicação de dois numeros\n";
+    cout << "Digite o 1o numero\n";
+    cin >> n1;
+    cout << "Digite o 2o numero\n";
+    cin >> n2;
+    multiplicacao = n1*n2;
+    cout << "A multiplicacao de " << n1 << " e " << n2 << " eh " << multiplicacao;
+
+return 0;
+}

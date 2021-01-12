@@ -1,0 +1,23 @@
+//Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: VOLUME <-- 3.14159 * RAIO2  * ALTURA
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    float volume=0, raio=0, altura=0;
+
+    //Cálculo de volume
+    cout << "Calculo do valor do volume de uma lata de oleo\n";
+    cout << "Digite o raio da lata de oleo: ";
+    cin >> raio;
+    cout << "Digite a altura da lata de oleo: ";
+    cin >> altura;
+    volume = 3.14159 * pow(raio,2) * altura;
+    cout << "O valor do volume de uma lata de oleo eh " << volume;
+
+return 0;
+}
+

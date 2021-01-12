@@ -1,0 +1,22 @@
+//Ler dois valores inteiros para as variáveis A e B e efetuar a troca dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    int a=0, b=0, aparab=0, bparaa=0;
+
+    //Troca de A por B e B por A
+    cout << "Troca de A por B e B por A\n";
+    cout << "Digite o valor de A: ";
+    cin >> a;
+    cout << "Digite o valor de B: ";
+    cin >> b;
+    aparab = b;
+    bparaa = a;
+    cout << "O valor inicial de A eh " << a << " e o valor de B eh " << b << " . O valor trocado de A eh " << aparab << " e o de B eh " << bparaa;
+
+return 0;
+} 
