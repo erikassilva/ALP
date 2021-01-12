@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+
+    //Declaração de variáveis
+    int n1=0;
+    int n2=0;
+    int soma=0;
+
+    //Soma de 2 números inteiros
+    cout << "Soma de 2 numeros inteiros\n";
+    cout << "Digite o 1o numero inteiro\n";
+    cin >> n1;
+    cout << "Digite o 2o numero inteiro\n";
+    cin >> n2;
+    soma = n1+n2;
+    cout << "A soma de 2 inteiros eh " << soma;
+
+return 0;
+}
