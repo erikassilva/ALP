@@ -1,0 +1,20 @@
+//Faça um algoritmo que receba 2 números inteiros e mostre os dois números
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    int n1=0, n2=0;
+
+    //Exibição de 2 números inteiros
+    cout << "Exibindo 2 numeros inteiros\n";
+    cout << "Digite o 1o numero inteiro\n";
+    cin >> n1;
+    cout << "Digite o 2o numero inteiro\n";
+    cin >> n2;
+    cout << "O 1o inteiro digitado eh " << n1 << " e o 2o inteiros digitado eh " << n2;
+
+    return 0;
+}
