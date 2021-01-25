@@ -1,0 +1,24 @@
+//Faça um algoritmo que leia a idade de uma pessoa expressa em ano, mês e dia e mostre-as em dias.
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+	
+	//Declaração de Variáveis
+	int ano=0, mes=0, dia=0, idade=0;
+	
+	//Transformando idade em dias
+	cout << "Transformando idade em dias\n";
+	cout << "Digite sua idade em anos: ";
+	cin >> ano;
+	cout << "Digite sua idade em meses: ";
+	cin >> mes;
+	cout << "Digite sua idade em dias: ";
+	cin >> dia;
+	idade = (ano*365+mes*30+dia);
+	cout<< "A idade de "<< ano<< " ano(s) "<< mes<< " mes(es) e "<< dia<< " dia(s) expressa em dias eh "<< idade << " dias.";
+	
+	return 0;
+}
