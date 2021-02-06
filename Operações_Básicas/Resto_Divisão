@@ -1,0 +1,19 @@
+//Faça um programa que receba um número e mostre o resto da divisão por 6. 
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    int n=0, div=0;
+
+    cout << "Mostrando o resto da divisão por 6.\n";
+    cout << "Digite um numero: ";
+    cin >> n;
+    div = n % 6;
+    cout << "O resto da divisao de " << n << " por 6 eh " << div;
+
+return 0;
+}
+

@@ -1,0 +1,19 @@
+//Elaborar um programa que efetue a apresentação do valor da conversão em real de um valor lido em dólar. O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário, para que seja apresentado o valor em moeda brasileira.
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    float dolar=0, taxa=0, conv=0;
+
+    cout << "Conversao do valor em Dolar para Reais!\n";
+    cout << "Digite o valor em dolar a ser convertido para reais: ";
+    cin >> dolar;
+    cout << "Digite a taxa de conversao do dia: ";
+    cin >> taxa;
+    conv = dolar * taxa;
+    cout << "O valor em dolar(es) de U$ " << dolar << " convertido na taxa de " << taxa << " eh R$ " << conv;
+return 0;
+} 

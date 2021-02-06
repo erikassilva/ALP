@@ -1,0 +1,22 @@
+//Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTAÇÃO <-- VALOR + (VALOR * (TAXA/100) * TEMPO)
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    float prestacao=0, calculo=0, taxa=0, tempo=0;
+
+    cout << "Calculo do valor de uma prestacao em atraso!\n";
+    cout << "Digite o valor da prestacao: ";
+    cin >> prestacao;
+    cout << "Digite a taxa de atraso: ";
+    cin >> taxa;
+    cout << "Digite o tempo do atraso em dias: ";
+    cin >> tempo;
+    calculo = (prestacao + (prestacao * (taxa/100) * tempo));
+    cout << "O valor da prestacao de R$ " << prestacao << " atraso de "<< tempo << " dia(s) e com juros de " << taxa << " eh R$ " << calculo;
+return 0;1000
+}
+

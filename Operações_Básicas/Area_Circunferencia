@@ -1,0 +1,18 @@
+//Faça um programa que calcule a área da circunferência.
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    float diametro = 0, cirunferencia = 0;
+
+    cout << "Programa para calcular a circunferencia\n";
+    cout << "Digite o diametro: ";
+    cin >> diametro;
+    cirunferencia = diametro * 3.14;
+    cout << "A area da circunferencia eh " << cirunferencia;
+
+return 0;
+}
