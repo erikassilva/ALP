@@ -1,0 +1,31 @@
+//Solicitar dois valores inteiros, e mostrá-los na ordem crescente e decrescente.(prever para quando os valores forem iguais).
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char**argv){
+    //Declaração de variáveis
+    int x=0, y=0, maior=0, menor=0;
+
+    cout << "Mostrar numeros em ordem crescente e decrescente\n";
+    cout << "Digite o 1o numero: ";
+    cin >> x;
+    cout << "Digite o 2o numero: ";
+    cin >> y;
+    if (x == y){
+    	cout << "Os numeros " << x << " e " << y << " sao iguais";
+	}
+	else{
+		if (x >= y){
+        	maior = x;
+        	menor = y;
+    	}
+    	else{
+        	maior = y;
+        	menor = x;
+    	} 
+		cout << "Ordem crescente " << menor << " <> " << maior << " -> Ordem decrescente " << maior << " <> " << menor;
+	}
+return 0;
+}

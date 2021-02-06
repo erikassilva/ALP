@@ -1,0 +1,22 @@
+//Solicitar um valor inteiro positivo ( consistir ) e mostrar se esse número é par ou não par
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char**argv){
+    //Declaração de variáveis
+    int n=0;
+    cout << "Mostrar se numero eh par\n";
+    do{
+        cout << "Digite um numero inteiro: ";
+        cin >> n;
+    }while (n<=0);
+    if (n%2==0){
+        cout << "O numero " << n << " eh par\n ";
+    }
+    else{
+    	cout << "O numero " << n << " eh impar\n ";
+    }
+return 0;
+}

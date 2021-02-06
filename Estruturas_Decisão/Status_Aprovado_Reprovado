@@ -1,0 +1,24 @@
+//Solicitar duas notas para o cálculo da média , mostrar a média e se a média for Maior ou igual a 6, mostrar “Aprovado”, caso contrário mostrar “Reprovado”.
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    float n1=0, n2=0, media=0;
+
+    cout << "Verificacao do status do aluno!\n";
+    cout << "Digite a 1a nota: ";
+    cin >> n1;
+    cout << "Digite a 2a nota: ";
+    cin >> n2;
+    media = (n1+n2)/2;
+    if (media >= 6){
+        cout << "Media " << media << " Status: APROVADO";
+    }
+    else{
+        cout << "Media " << media << " Status: REPROVADO";
+    }
+return 0;
+}
