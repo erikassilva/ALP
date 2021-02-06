@@ -1,0 +1,21 @@
+//Receber valores de base e altura de um triângulo e verificar se são valores válidos (positivos maiores que zero). Em caso afirmativo, calcular a área do triângulo.
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char**argv){
+    //Declaração de variáveis
+    int base=0, altura=0, area=0;
+
+    while (base <= 0 || altura <= 0){
+        cout << "Digite a base do triangulo: ";
+        cin >> base;
+        cout << "Digite a altura do triangulo: ";
+        cin >> altura;
+    }
+    area = (base*altura)/2;
+    cout << "A area do triangulo eh " << area << endl;
+	
+	return 0;
+}
