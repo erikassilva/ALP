@@ -1,0 +1,27 @@
+//Dado um número inteiro de segundos, mostrar a quantas horas, minutos e segundos ele corresponde.
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char**argv){
+    //Declaração de variáveis
+    int num=0, aux_n=0, tot_hora=0, tot_min=0, seg=0;
+
+    cout<< "Transformar segundos em horas, minutos e segundos\n";
+    cout << "Digite o numero em segundos: ";
+    cin >> num;
+    aux_n = num;
+    while (num >= 3600){
+        num = num-3600;
+        tot_hora = tot_hora + 1;
+    }
+    while (num >= 60){
+        num = num - 60;
+        tot_min = tot_min + 1;
+    }
+    seg = num;
+    cout << "O numero inteiro de segundos " << aux_n << " transformado eh " << tot_hora << " horas " << tot_min << " minutos e " << seg << " segundos.";
+
+    return 0;
+}
