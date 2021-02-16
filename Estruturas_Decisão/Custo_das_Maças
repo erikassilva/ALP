@@ -1,0 +1,25 @@
+/* As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra. */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char**argv){
+    //Declaração de variáveis
+    int nmaca=0;
+    float precoa=0, precob=0;
+
+    cout << "Custo total da compra\n";
+    cout << "Digite a quantidade de macas: ";
+    cin >> nmaca;
+    if (nmaca < 12){
+        precoa = nmaca * 1.30;
+        cout << "O custo total das macas eh " << precoa << " e o preco unitario eh R$ 1.30.";
+    }
+    else{
+        precob = nmaca * 1.00;
+        cout << "O custo total das macas eh " << precob << " e o preco unitario eh R$ 1.00.";
+    }
+    return 0;
+}
+    

@@ -1,0 +1,34 @@
+/* Escrever um algoritmo que lê um valor em Reais (R$) e calcule qual o menor número possível de notas de 100, 50, 10, 5 e 1 em que o valor lido pode ser decomposto. Escrever o valor lido e a relação de notas necessárias. */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char**argv){
+    //Declaração de variáveis
+    float val=0, aux_val=0, cem=0, cinq=0, dez=0, cinc=0, um=0;
+
+    cout << "Relacao de notas\n";
+    cout << "Digite um valor em reais: ";
+    cin >> val;
+    aux_val = val;
+    while (val >= 100){
+        val = val-100;
+        cem = cem + 1;
+    }
+    while (val >= 50){
+        val = val -50;
+        cinq = cinq + 1;
+    }
+    while (val >= 10){
+        val = val - 10;
+        dez = dez + 1;
+    }
+    while (val >= 5){
+        val = val - 5;
+        cinc = cinc + 1;
+    }
+    um = val;
+    cout << "O valor " << aux_val << " decomposto eh: " << cem << " notas de cem, " << cinq << " notas de cinquenta, " << dez << " notas de dez, " << cinc << " notas de cinco e, " << um << " notas de um.";
+return 0;
+}

@@ -1,0 +1,44 @@
+/*Credito especial em função do saldo médio.
+	- ler o saldo medio do cliente,
+	- calcular o valor do credito em função da tabela a seguir:
+			SALDO MÉDIO		% CREDITO
+			0  a 200			0%
+			201 a 400			20%
+			401 a 600			30%
+			Acima de 601		40%
+    - mostrar como saída uma mensagem informando o saldo médio e o valor do crédito */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char**argv){
+    //Declaração de variáveis
+    float sdo_medio=0, credito=0;
+
+    cout << "Calcular credito em funcao do saldo medio\n";
+    cout << "Digite o saldo medio do cliente: ";
+    cin >> sdo_medio;
+    if (sdo_medio < 0){
+        cout << "Conta negativa";
+    }
+    else{
+        if (sdo_medio <=200){
+            cout << "O saldo medio eh " << sdo_medio << " e o valor do credito eh 0,00";
+        }
+        else{
+            if (sdo_medio <= 400){
+                cout << "O saldo medio eh " << sdo_medio << " e o valor do credito eh " << ((sdo_medio*20)/100);
+            }
+            else{
+                if (sdo_medio <= 600){
+                    cout << "O saldo medio eh " << sdo_medio << " e o valor do credito eh " << ((sdo_medio*30)/100);
+                }
+                else{
+                    cout << "O saldo medio eh " << sdo_medio << " e o valor do credito eh " << ((sdo_medio*40)/100);
+                }
+            }
+        }
+    }
+    return 0;
+}

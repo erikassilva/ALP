@@ -1,0 +1,46 @@
+/* Um vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo: 
+
+Código do produto Preço unitário 
+1 		R$ 32,00 
+2 		R$ 45,00 
+3		R$ 37,00 
+4 		R$ 33,00  */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char**argv){
+    //Declaração de variáveis
+    int cod=0, quantidade=0;
+    float val_prod=0;
+
+    cout << "Calcular preco total\n";
+    cout << "Digite o codigo do produto: ";
+    cin >> cod;
+
+    if (cod > 0 && cod < 5){
+        cout << "Digite a quantidade desejada: ";
+        cin >> quantidade;
+        if (cod == 1){
+            cout << "O valor total do codigo " << cod << " quantidade " << quantidade << " eh " << (quantidade*32);
+        }
+        else{
+            if (cod == 2){
+                cout << "O valor total do codigo " << cod << " quantidade " << quantidade << " eh " << (quantidade*45);
+            }
+            else{
+                if (cod == 3){
+                    cout << "O valor total do codigo " << cod << " quantidade " << quantidade << " eh " << (quantidade*37);
+                }
+                else{
+                    cout << "O valor total do codigo " << cod << " quantidade " << quantidade << " eh " << (quantidade*33);
+                }
+            }
+        }
+    }
+    else{
+        cout << "Produto nao existe";
+    }
+    return 0;
+}
