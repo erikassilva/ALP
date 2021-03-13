@@ -1,0 +1,20 @@
+//Ler dois valores inteiros negativos (consistir se é negativo), multiplicar e mostrar o resultado 
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv){
+	//Declaração de Variáveis
+	int n1, n2, multiplica;
+	
+	cout << "Multiplicacao de 2 numeros negativos\n";
+	do{
+		cout << "Digite 2 numeros negativos: ";
+		cin >> n1 >> n2;
+		
+	}while (n1 >=0 || n2 >=0);
+	multiplica = n1 * n2;
+	cout << "A multiplicacao de " << n1 << " x " << n2 << " eh = " << multiplica;
+	return 0;
+}

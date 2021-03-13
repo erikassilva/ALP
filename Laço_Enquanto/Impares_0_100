@@ -1,0 +1,20 @@
+//Mostrar os impares entre 0 e 100
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    //Declaração de variáveis
+    int n=0, impar=0;
+    
+    cout << "Impares entre 0 e 100\n";
+    while (n<=100){
+    	if (n%2 != 0){
+    		impar = n;
+		}
+		cout << n << " * ";
+		n ++;
+	}
+	return 0;
+}

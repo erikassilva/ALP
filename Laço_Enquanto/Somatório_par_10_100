@@ -1,0 +1,23 @@
+//Mostrar os pares entre 10 e 100 e a somatória dos pares    
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv){
+	//Declaração de variáveis
+	int n=10, par, soma=0;
+	
+	cout << "Pares entre 10 e 100 e somatoria\n";
+	while (n<=100){
+		if(n%2==0){
+			par = n;
+			soma = soma +par;
+			cout << par << "\n";
+		}
+		n ++;
+	}
+	cout << "A soma dos pares eh " << soma;
+	
+	return 0;
+}
