@@ -1,0 +1,26 @@
+/*Ler 10 valores inteiros, um de cada vez, e contar quantos deles estão no intervalo [10,20] e 
+quantos deles estão fora do intervalo, ao final mostrar estas informações*/
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv){
+	//Declaração de variáveis
+	
+	int n, i=0, dentro=0, fora=0;
+	
+	while (i <= 10){
+		cout << "Digite um numero inteiro: ";
+		cin >> n;
+		if (n>= 10 && n <= 20)
+			dentro += 1;
+		else
+			fora += 1;	
+		i ++;
+	}
+	cout << "Numeros dentro do intervalo de [10,20]: \n" << dentro;
+	cout << "Numeros fora do intervalo de [10,20] \n: " << fora;
+		
+	return 0;
+}

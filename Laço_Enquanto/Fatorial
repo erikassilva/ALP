@@ -1,0 +1,26 @@
+//Solicitar um número inteiro positivo ( consistir ), calcular o fatorial e mostrar
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** ergv){
+	
+	int n=0, fat=1;
+	
+	cout << "calcular fatorial de um inteiro\n";
+	while (n <=0)
+	{
+		cout << "Digite um numero inteiro: ";
+		cin >> n;		
+	} 
+	while (n > 0){
+		cout << n << " ";
+		fat = fat * n;
+		n = n - 1;
+	}
+	cout << "n! = " << fat;
+	
+	
+	return 0;
+}

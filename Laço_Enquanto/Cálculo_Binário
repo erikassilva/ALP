@@ -1,0 +1,32 @@
+//Solicitar um número inteiro na base decimal positivo ( consistir ) calcular o binário e mostrar 
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv){
+	
+	int n=0, bin, aux,acm=1;
+	
+	cout << "Calcular Binario\n";
+	while (n <=0){
+		cout << "Digite um numero positivo: ";
+		cin >> n;
+		aux = n;
+	}
+	while (n / 2 > 0){
+		acm = acm + acm;
+		n /=2;
+	}
+	while (aux >= 0){
+		if (aux / acm >= 1){
+			cout << 1;
+			aux = aux%acm;
+		}
+		else
+			cout << 0;
+	
+		acm = acm /2;
+	}
+	return 0;
+}

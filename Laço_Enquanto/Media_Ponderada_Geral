@@ -1,0 +1,34 @@
+/*Ler três notas de 50 alunos de uma turma. Para cada aluno, calcule a média ponderada, como segue: 
+MP = ( n1*2 + n2*4 + n3*3 ) / 10
+Além disso, calcule a média geral da turma. 
+Mostre a média de cada aluno e uma mensagem "Aprovado", caso a média seja maior ou igual a sete, e uma mensagem "Reprovado", caso contrário. 
+Ao final, mostre a média geral.*/
+
+#include <iostream>
+#define statusA 7
+
+using namespace std;
+
+int main (int argc, char** argv){
+	
+	int i=1;
+	float n1, n2, n3, mp, mg, soma=0;
+	
+	cout << "Calculo da media ponderada individual e media geral da turma\n";
+	while (i <= 3){
+		cout << "Digite as 3 notas do aluno: ";
+		cin >> n1 >> n2 >> n3;
+		mp = (n1*2 + n2*4 + n3*3)/10;
+		cout << "A media ponderada eh: " << mp;
+		if (mp >= statusA)
+			cout << "\nStatus= Aprovado\n";
+		else
+			cout << "\nStatus Reprovado\n";
+		soma = soma + mp;
+		mg = soma / i;
+		i ++;
+	}
+	cout << "A media geral eh " << mg;
+			
+	return 0;
+}

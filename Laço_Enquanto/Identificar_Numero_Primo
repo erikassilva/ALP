@@ -1,0 +1,28 @@
+//Solicitar um número inteiro positivo ( consistir ) e mostrar se é ou não primo 
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv){
+	
+	int n=0, acm, divisor=1;
+	
+	cout << "Verificar se numero eh primo\n";
+	
+	while (n <=0){
+		cout << "Digite um numero inteiro positivo: ";
+		cin >> n;
+	}
+	while (n >= divisor){
+		if (n % divisor == 0)
+			acm += 1;
+	divisor ++;	
+	}
+	if (acm <= 2)
+		cout << "Numero eh primo\n";
+	else
+		cout << "numero nao eh primo\n";
+	
+	return 0;
+}
