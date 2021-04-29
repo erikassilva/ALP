@@ -1,0 +1,25 @@
+//Mostrar apenas o valor do termo da posição informada da série de Fibonacci
+
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv){
+	
+	int n1=0, n2=1, pos=0, ant=0;
+	
+	do {
+		cout << "Digite a posicao desejada: ";
+		cin >> pos;
+	}while (pos <= 0);
+	
+	while (pos > 1){
+		ant = n1 + n2;
+		n1 = n2;
+		n2 = ant;
+		pos --;
+	}
+	cout << ant << " ";
+	
+	return 0;
+}

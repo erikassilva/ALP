@@ -1,0 +1,24 @@
+//Fatorial de um valor informado ( consistir para maior que zero e menor que 14) 	
+
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+int main(int argc, char** argv) {
+
+	long int num, n, fat=1;
+	
+	cout << "Calculo de fatorial de 1 a 13" << endl;
+	do{
+		cout << "Digite um numero: ";
+		cin >> num;
+	}while(num < 1 || num > 13);
+	
+	for (n=num; n>0; n=n-1){
+		fat = fat*n;
+		cout << "n!= " << fat << endl;
+	}
+	
+	return 0;
+}
