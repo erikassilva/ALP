@@ -1,0 +1,32 @@
+/* Criar um vetor A de 15 elementos 
+(a) Solicitar um valor inteiro positivo na base decimal
+(b) Transformar em binário e para binário calculado inserir no vetor A
+(c)	Após o cálculo mostrar o binário na ordem correta
+(d)	OBS:Mostrar somente os elementos inseridos*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int a[15];
+	int n=0, aux=0, cont=0;
+	
+	cout << "Transformar em Binario" << endl;
+	cin >> n;
+	
+	while(n>0){
+		a[aux] = n%2;
+		n = n/2;
+		aux = aux+1;
+	}
+	aux--;
+	cout << "Ultima pos: " << aux << endl;
+	cout << "Vetor: ";
+	for (cont=aux; cont>=0; cont--){
+		cout << a[cont];
+	}
+	
+	return 0;
+}

@@ -1,0 +1,33 @@
+/* Criar um vetor  A com 10 elementos
+(a)	Inserir os elementos de 1 a 10 no vetor
+(b)	Criar um outro vetor B que conterá o elemento do vetor A multiplicado por 2
+(c)	Mostrar os dois vetores*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+
+	int vetorA[10];
+	int vetorB[10];
+	int n=0;
+
+	cout << "Criar vetor A e B" << endl;
+	for (n=0; n<=9; n=n+1){
+		//cout << n << " " << "digite o valor para o vetor A: ";
+		cin >> vetorA[n];
+	}
+	for (n=0; n<=9; n=n+1){		
+		vetorB [n] = vetorA[n] *2;
+	}
+	for (n=0; n<=9; n=n+1){
+		cout << "vetor A= "<< vetorA[n] << endl;	
+	}
+	//cout << endl;
+	for (n=0; n<=9; n=n+1){
+		cout << "vetor B= "<< vetorB[n] << endl;
+	}
+
+	return 0;
+}

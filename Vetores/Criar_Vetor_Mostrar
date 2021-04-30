@@ -1,0 +1,24 @@
+/* Criar um vetor A de 5 elementos do tipo inteiro
+(a) Solicitar os valores para o usuário e inserir no vetor A
+(b)	Após a inserção mostrar o vetor A*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int vetorA [5];
+	int n=0;
+
+	cout << "Inserir dados no vetor\n";
+	
+	for(n=0; n<=4; n=n+1){
+		cout << "Digite um numero: ";
+		cin >> vetorA[n];
+	}
+	for(n=0; n<=4; n=n+1){
+		cout << " "<< vetorA[n];
+	}	
+	return 0;
+}

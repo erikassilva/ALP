@@ -1,0 +1,41 @@
+/* Criar um vetor A do tipo inteiro de 5 elementos
+(a) Solicitar os valores para o usuário e inserir no vetor A
+(b) Criar um vetor B do tipo inteiro de 5 elementos 
+(c) Ler o vetor A e para cada elemento lido calcular o fatorial e gravar no B
+(d) Após de todos os elementos do vetor A, mostrar os dois vetores*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int a[5];
+	int b[5];
+	int n=0, fat=1, aux=0;
+	
+	cout << "Calculo fatorial" << endl;
+	
+	for (n=0; n<5; n++){
+		cout << "Digite um valor: ";
+		cin >> a[n];
+	}
+	for (n=aux; n<5; n++){
+		aux = a[n];
+		while(aux>0){
+			fat = fat*aux;
+			aux = aux-1;
+		}
+		b[n]= fat;
+		fat=1;
+	}
+	for (n=0; n<5; n++){
+		cout << a[n] << "     ";
+		}
+	cout << endl;
+	for (n=0; n<5; n++){
+		cout << b[n] << " ";
+	}
+
+	return 0;
+}

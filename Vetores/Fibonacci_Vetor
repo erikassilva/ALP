@@ -1,0 +1,42 @@
+/* Criar um vetor A de 20 elementos do tipo inteiro
+(a)	Solicitar para o usuário um número do termo da série de fibonacci
+(b)	Calcular a série até o termo informado e para cada termo calculado inserir no vetor A
+(c)	Após a inserção mostrar o vetor A*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int vetor_a[20];
+	int n=0, cont=0, fib=0, aux=0, i=0, n1=0, n2=1;
+	
+	cout << "Calcular Fibonacci" << endl;
+	
+	cout << "Digite o termo da serie Fibonacci: ";
+	cin >> n;
+	
+	if (n >= 1){
+        vetor_a[aux] = n1;  //vetor_a[0] = 0;
+        aux++;
+        i = 1;
+    }
+    if (n>= 2){
+        vetor_a[aux] = n2;  //vetor_a[1] = 1;
+        aux++;
+        i = 2;
+    }
+	while(i<n){
+		fib = n1+n2;
+		n1 = n2;
+		n2 = fib;
+		vetor_a[aux] = fib;
+		i = i+1;
+		aux=aux+1;
+	}
+	for (cont=0; cont<i; cont++){
+		cout << vetor_a[cont] << "  ";
+	}
+	return 0;
+}

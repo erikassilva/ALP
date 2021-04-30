@@ -1,0 +1,49 @@
+/* Criar um vetor A de 10 elementos do tipo inteiro
+(a) Solicitar os valores para o usuário e inserir no vetor A
+(b)	Criar um vetor B  de 10 elementos do tipo inteiro
+(c)	Ler o vetor A e para cada elemento achar se é ou não primo e gravar no vetor B o  "0" para primo e "1" para não primo.
+(d)	Após o cálculo mostrar o valor do elemento do vetor A e o correspondente do vetor B*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int vetor_a[10];
+	int vetor_b[10];
+	int n=0, aux_a=0, calc=0, acm=0;
+	
+	cout << "Verificar se eh ou nao primo\n";
+	
+	for (n=0; n<=9; n=n+1) {
+		cout << "Digite um numero: ";
+		cin >> vetor_a[n];
+	}
+	for (n=0; n<=9; n=n+1) {
+		aux_a = vetor_a[n];
+		while (aux_a>0){
+			calc = vetor_a[n]%aux_a;
+			if(calc == 0){
+				acm = acm +1;
+			}
+			aux_a = aux_a-1;
+		}
+		if(acm>2){
+			vetor_b[n] = 1; // não eh primo
+		}
+		else{
+			vetor_b[n] = 0; // primo
+		}
+		acm = 0;
+	}
+	for(n=0; n<=9; n=n+1){
+		cout << vetor_a[n] << " ";
+	}
+	cout << endl;
+	for(n=0; n<=9; n=n+1){
+		cout << vetor_b[n] << " ";
+	}
+			
+	return 0;
+}
